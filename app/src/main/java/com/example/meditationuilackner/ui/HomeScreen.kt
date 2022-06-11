@@ -255,20 +255,21 @@ fun CurrentMeditation(
                 color = TextWhite
             )
         }
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape)
+                .background(ButtonBlue)
+                .padding(10.dp)
+        ) {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_play), contentDescription = "Play",
+                tint = Color.White,
+                modifier = Modifier.size(16.dp)
+            )
     }
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = Modifier
-            .size(40.dp)
-            .clip(CircleShape)
-            .background(ButtonBlue)
-            .padding(10.dp)
-    ) {
-        Icon(
-            painter = painterResource(id = R.drawable.ic_play), contentDescription = "Play",
-            tint = Color.White,
-            modifier = Modifier.size(16.dp)
-        )
+
 
     }
 }
